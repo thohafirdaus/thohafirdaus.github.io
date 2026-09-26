@@ -4,25 +4,25 @@ Website profil akademik dan profesional Dr. Thoha Firdaus, M.Pd.Si. Situs ini me
 
 ## Fitur
 
-- Tampilan profil personal yang bersih, responsif, dan profesional.
-- Section riset dengan grafik jumlah publikasi dan sitasi per tahun.
-- Daftar publikasi relevan dari Google Scholar untuk topik teknologi, pengembangan media, dan fisika.
-- Publikasi ditampilkan ringkas sebanyak 5 item terbaru, dengan tombol untuk melihat semua publikasi.
+- Tema "laboratorium kosmik" bernuansa fisika: medan partikel interaktif, orbit atom, dan animasi saat di-scroll.
+- Section riset dengan grafik jumlah publikasi dan sitasi per tahun, serta total sitasi, h-index, dan i10-index yang dihitung otomatis.
+- Daftar seluruh publikasi dari Google Scholar lengkap dengan jumlah sitasi dan fitur pencarian.
+- Publikasi ditampilkan ringkas sebanyak 6 item terbaru, dengan tombol untuk melihat semua publikasi.
 - Informasi pendidikan, pengalaman organisasi, aktivitas digital, dan kontak profesional.
 - Footer berisi tautan sosial media dalam bentuk ikon.
 
 ## Teknologi
 
 - HTML
-- Tailwind CSS 3
+- CSS murni (tanpa build step)
 - JavaScript vanilla
 - GitHub Pages
 
 ## Struktur Penting
 
 - `index.html` — halaman utama website.
-- `src/input.css` — sumber stylesheet Tailwind dan custom component styles.
-- `dist/output.css` — hasil build CSS untuk produksi.
+- `css/style.css` — seluruh stylesheet dan animasi.
+- `js/main.js` — interaksi, efek partikel, grafik, dan daftar publikasi.
 - `data/publications.json` — metadata publikasi yang digunakan untuk daftar publikasi dan grafik riset.
 - `img/` — aset gambar dan logo.
 
@@ -38,14 +38,6 @@ Lalu buka:
 
 ```text
 http://127.0.0.1:4173
-```
-
-## Build CSS
-
-Setelah mengubah `src/input.css` atau class Tailwind di `index.html`, jalankan:
-
-```bash
-npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify
 ```
 
 ## Catatan Publikasi

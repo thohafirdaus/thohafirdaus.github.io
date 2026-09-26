@@ -112,8 +112,8 @@
                 <p class="mt-1 text-sm text-slate-500">Founder PT Sangu Ilmu Cendekia</p>
               </div>
               <div class="px-4">
-                <p class="font-mono text-2xl font-semibold tracking-tight text-slate-950">75</p>
-                <p class="mt-1 text-sm text-slate-500">Publikasi relevan</p>
+                <p class="font-mono text-2xl font-semibold tracking-tight text-slate-950">101</p>
+                <p class="mt-1 text-sm text-slate-500">Publikasi</p>
               </div>
               <div class="pl-4">
                 <p class="font-mono text-2xl font-semibold tracking-tight text-slate-950">2021</p>
@@ -221,7 +221,7 @@
                 <div class="chart-loading">Memuat grafik</div>
               </div>
               <p class="mt-5 text-sm leading-6 text-slate-400">
-                Sitasi dihitung dari total sitasi artikel pada metadata Google Scholar yang relevan dengan teknologi, media pembelajaran, dan fisika.
+                Sitasi dihitung dari total sitasi seluruh artikel pada profil Google Scholar.
               </p>
             </div>
           </div>
@@ -253,7 +253,7 @@
         <div class="mx-auto max-w-7xl px-5 sm:px-8">
           <div class="mb-12 grid gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
             <div>
-              <p class="section-kicker reveal">Publikasi Relevan</p>
+              <p class="section-kicker reveal">Publikasi</p>
               <p class="mt-4 font-mono text-sm font-semibold text-slate-500 reveal" id="publication-summary">Memuat metadata Scholar</p>
             </div>
             <h2 class="section-title reveal">Riset teknologi, pengembangan media, dan fisika.</h2>
@@ -481,7 +481,7 @@
         })
         .then(function (publications) {
           publicationData = publications;
-          publicationSummary.textContent = publications.length + " publikasi relevan, termasuk riset bersama.";
+          publicationSummary.textContent = publications.length + " publikasi, termasuk riset bersama.";
           renderResearchChart(publications);
           renderPublications();
         })

@@ -7,232 +7,102 @@
       name="description"
       content="Profil akademik Dr. Thoha Firdaus, M.Pd.Si., dosen Pendidikan Fisika, peneliti media pembelajaran, dan pengembang konten edukasi."
     />
-    <meta name="theme-color" content="#05070f" />
+    <meta name="theme-color" content="#f7f5ef" />
     <title>Dr. Thoha Firdaus, M.Pd.Si.</title>
     <link rel="icon" href="img/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Source+Sans+3:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress"></span></div>
-    <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
-    <div class="starfield" aria-hidden="true"></div>
-
-    <header class="nav" id="nav">
-      <div class="container nav-inner">
-        <a href="#top" class="brand" aria-label="Beranda Thoha Firdaus">
-          <span class="brand-mark"><img src="img/logo.png" alt="" /></span>
-          <span class="brand-text">
-            <strong>Thoha Firdaus</strong>
-            <small>Physics Education</small>
-          </span>
-        </a>
-
-        <nav class="nav-links" aria-label="Navigasi utama">
-          <a href="#about">Profil</a>
-          <a href="#education">Pendidikan</a>
-          <a href="#research">Riset</a>
-          <a href="#publication">Publikasi</a>
-          <a href="#activity">Aktivitas</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand"><img src="img/logo.png" alt="" width="32" height="32" />Thoha Firdaus</a>
+        <nav aria-label="Navigasi utama">
+          <a href="#profil">Profil</a>
+          <a href="#pendidikan">Pendidikan</a>
+          <a href="#riset">Riset</a>
+          <a href="#publikasi">Publikasi</a>
+          <a href="#karya">Karya</a>
+          <a href="#kontak" class="nav-cta">Kontak</a>
         </nav>
-
-        <a href="#contact" class="btn btn-ghost nav-cta">Hubungi Saya</a>
-
-        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Buka navigasi" aria-expanded="false">
-          <span></span><span></span>
-        </button>
-      </div>
-
-      <div class="mobile-menu" id="mobile-menu">
-        <a href="#about">Profil</a>
-        <a href="#education">Pendidikan</a>
-        <a href="#research">Riset</a>
-        <a href="#publication">Publikasi</a>
-        <a href="#activity">Aktivitas</a>
-        <a href="#contact">Kontak</a>
       </div>
     </header>
 
     <main id="top">
       <!-- HERO -->
-      <section class="hero">
-        <canvas class="hero-canvas" id="field-canvas" aria-hidden="true"></canvas>
-        <div class="hero-grid-bg" aria-hidden="true"></div>
-
-        <div class="floating-eq" aria-hidden="true">
-          <span style="--x: 6%; --y: 22%; --d: 0s">E = mc²</span>
-          <span style="--x: 44%; --y: 12%; --d: -4s">F = ma</span>
-          <span style="--x: 10%; --y: 82%; --d: -8s">λ = h/p</span>
-          <span style="--x: 52%; --y: 88%; --d: -2s">∇·E = ρ/ε₀</span>
-          <span style="--x: 92%; --y: 16%; --d: -6s">ΔxΔp ≥ ħ/2</span>
-        </div>
-
+      <section class="hero" id="profil">
         <div class="container hero-inner">
           <div class="hero-copy">
-            <p class="chip reveal">
-              <span class="pulse-dot" aria-hidden="true"></span>
-              Universitas Nurul Huda · OKU Timur
+            <p class="eyebrow reveal">Universitas Nurul Huda · OKU Timur</p>
+            <h1 class="reveal">Dr. Thoha Firdaus, <span>M.Pd.Si.</span></h1>
+            <p class="lead reveal">
+              Dosen Pendidikan Fisika dan Dekan Fakultas Sains dan Teknologi. Saya meneliti media pembelajaran fisika: laboratorium virtual, analisis video, dan literasi sains di sekolah maupun kampus.
             </p>
-
-            <h1 class="hero-title reveal">
-              <span class="hero-title-small">Dr.</span>
-              <span class="split-line">Thoha</span>
-              <span class="split-line gradient-text">Firdaus<span class="hero-title-suffix">, M.Pd.Si.</span></span>
-            </h1>
-
-            <p class="hero-role reveal">
-              <span class="mono muted">&gt;</span>
-              <span id="typed-role">Dosen Pendidikan Fisika</span><span class="caret" aria-hidden="true"></span>
-            </p>
-
-            <p class="hero-lead reveal">
-              Mengajar Pendidikan Fisika, mengembangkan media pembelajaran, dan menulis konten edukasi agar sains terasa dekat dengan kelas, laboratorium, dan kehidupan sehari-hari.
-            </p>
-
-            <div class="hero-actions reveal">
-              <a class="btn btn-primary magnetic" href="#research">
-                Jelajahi Riset
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
-              </a>
-              <a class="btn btn-ghost magnetic" href="https://sanguilmu.com" target="_blank" rel="noreferrer">Kunjungi Sangu Ilmu</a>
+            <div class="actions reveal">
+              <a class="btn btn-primary" href="#publikasi">Lihat publikasi</a>
+              <a class="btn btn-outline" href="mailto:mail@thoha.id">mail@thoha.id</a>
             </div>
-
             <dl class="hero-stats reveal">
-              <div>
-                <dt>Publikasi</dt>
-                <dd><span class="counter" id="stat-publications" data-target="101">101</span></dd>
-              </div>
-              <div>
-                <dt>Sitasi</dt>
-                <dd><span class="counter" id="stat-citations" data-target="435">435</span></dd>
-              </div>
-              <div>
-                <dt>h-index</dt>
-                <dd><span class="counter" id="stat-hindex" data-target="12">12</span></dd>
-              </div>
+              <div><dt>Publikasi</dt><dd id="stat-publications">101</dd></div>
+              <div><dt>Sitasi</dt><dd id="stat-citations">435</dd></div>
+              <div><dt>h-index</dt><dd id="stat-hindex">12</dd></div>
             </dl>
           </div>
 
-          <div class="hero-visual reveal" id="hero-visual">
-            <div class="atom" aria-hidden="true">
-              <div class="nucleus-glow"></div>
-              <div class="orbit orbit-1"><div class="orbit-spin"><i></i></div></div>
-              <div class="orbit orbit-2"><div class="orbit-spin"><i></i></div></div>
-              <div class="orbit orbit-3"><div class="orbit-spin"><i></i></div></div>
-              <div class="ring-dashed"></div>
-            </div>
-            <img class="hero-photo" src="img/foto-hero.png" alt="Foto Dr. Thoha Firdaus" width="500" height="544" />
-
-            <div class="hud hud-top">
-              <span class="mono">Fokus</span>
-              <strong>Media Pembelajaran Fisika</strong>
-            </div>
-            <div class="hud hud-bottom">
-              <span class="mono">Jabatan</span>
-              <strong>Dekan FST UNHA</strong>
-            </div>
-          </div>
+          <figure class="hero-photo reveal">
+            <img src="img/foto2.jpeg" alt="Foto Dr. Thoha Firdaus" width="1241" height="1607" />
+            <figcaption><strong>Dekan FST UNHA</strong>sejak 2021</figcaption>
+          </figure>
         </div>
-
-        <a href="#about" class="scroll-hint" aria-label="Gulir ke profil">
-          <span></span>
-        </a>
       </section>
 
-      <!-- MARQUEE -->
-      <div class="marquee" aria-hidden="true">
-        <div class="marquee-track">
-          <span>F = ma</span><i>✦</i><span>E = mc²</span><i>✦</i><span>v = λf</span><i>✦</i><span>P = W/t</span><i>✦</i>
-          <span>F = G m₁m₂ / r²</span><i>✦</i><span>iħ ∂ψ/∂t = Ĥψ</span><i>✦</i><span>S = k ln W</span><i>✦</i><span>∮ B·dl = μ₀I</span><i>✦</i>
-          <span>F = ma</span><i>✦</i><span>E = mc²</span><i>✦</i><span>v = λf</span><i>✦</i><span>P = W/t</span><i>✦</i>
-          <span>F = G m₁m₂ / r²</span><i>✦</i><span>iħ ∂ψ/∂t = Ĥψ</span><i>✦</i><span>S = k ln W</span><i>✦</i><span>∮ B·dl = μ₀I</span><i>✦</i>
-        </div>
-      </div>
-
-      <!-- ABOUT -->
-      <section id="about" class="section">
-        <div class="container about-grid">
-          <div class="about-visual reveal">
-            <div class="frame spotlight">
-              <img src="img/foto2.jpeg" alt="Foto kegiatan akademik Thoha Firdaus" loading="lazy" />
-              <span class="frame-scan" aria-hidden="true"></span>
-              <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-            </div>
-            <p class="frame-caption mono">fig. 01 — Profil akademik</p>
-          </div>
-
-          <div class="about-copy">
-            <p class="kicker reveal"><span>01</span> Profil Akademik</p>
-            <h2 class="section-title reveal">Belajar, mengajar, dan membangun <em>ekosistem sains</em> yang berguna.</h2>
-            <p class="section-lead reveal">
-              Thoha Firdaus adalah dosen Universitas Nurul Huda yang lahir di Ogan Komering Ulu Timur. Konsentrasi akademiknya berada pada Pendidikan Fisika, pengembangan media pembelajaran, dan teknologi media pembelajaran fisika.
+      <!-- TENTANG -->
+      <section class="section">
+        <div class="container about">
+          <h2 class="reveal">Tentang saya</h2>
+          <div class="about-text reveal">
+            <p>
+              Saya lahir di OKU Timur, anak ketiga dari tiga bersaudara. Saya mengajar di Universitas Nurul Huda, kampus tempat istri saya juga mengajar.
             </p>
-            <p class="section-lead reveal">
-              Selain aktif mengajar, ia membuat konten blog dan video seputar teknologi pembelajaran. Minat lain yang terus diasah meliputi desain, web development, dan pemanfaatan teknologi untuk pendidikan.
+            <p>
+              Di luar kelas, saya menulis tentang teknologi pembelajaran di <a href="https://thoha.id" target="_blank" rel="noreferrer">thoha.id</a>, membuat video di
+              <a href="https://youtube.com/sanguilmuofficial" target="_blank" rel="noreferrer">YouTube Sangu Ilmu</a>, dan senang mengutak-atik desain serta web development.
             </p>
-
-            <div class="info-grid">
-              <article class="card spotlight reveal">
-                <span class="card-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.6" /><path d="M4 20c1.5-3.5 4.5-5 8-5s6.5 1.5 8 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" /></svg>
-                </span>
-                <h3>Biodata Singkat</h3>
-                <p>Lahir di OKU Timur, anak ke 3 dari 3 bersaudara, menikah pada tahun 2016 dengan istri yang juga berprofesi sebagai tenaga pengajar di Universitas Nurul Huda.</p>
-              </article>
-              <article class="card spotlight reveal">
-                <span class="card-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.6" /><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" /></svg>
-                </span>
-                <h3>Kontak Profesional</h3>
-                <p>Email: <a href="mailto:mail@thoha.id">mail@thoha.id</a></p>
-                <p>WhatsApp Bisnis: <a href="https://wa.me/6281278687449" target="_blank" rel="noreferrer">+62 812 7868 7449</a></p>
-              </article>
-            </div>
           </div>
         </div>
       </section>
 
-      <!-- EDUCATION -->
-      <section id="education" class="section section-alt">
+      <!-- PENDIDIKAN -->
+      <section class="section section-tint" id="pendidikan">
         <div class="container">
-          <div class="section-head">
-            <p class="kicker reveal"><span>02</span> Jejak Pendidikan</p>
-            <h2 class="section-title reveal">Lintasan akademik dari S1 hingga <em>doktoral</em>.</h2>
-          </div>
-
-          <div class="trajectory reveal" id="trajectory">
-            <svg class="trajectory-path" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true">
-              <path class="trajectory-guide" d="M 60 180 Q 500 -140 940 180" />
-              <path class="trajectory-line" d="M 60 180 Q 500 -140 940 180" pathLength="1" />
+          <h2 class="reveal">Pendidikan</h2>
+          <div class="trajectory" aria-hidden="true">
+            <svg viewBox="0 0 1000 160" preserveAspectRatio="none">
+              <path class="trajectory-line" d="M 80 150 Q 500 -110 920 150" pathLength="1" />
             </svg>
-            <span class="trajectory-node" style="--left: 16.7%; --top: 55.8%"></span>
-            <span class="trajectory-node" style="--left: 50%; --top: 10%"></span>
-            <span class="trajectory-node" style="--left: 83.3%; --top: 55.8%"></span>
-            <span class="trajectory-label mono" aria-hidden="true">y = v₀t sin θ − ½gt²</span>
           </div>
-
           <div class="edu-grid">
-            <article class="edu-card card spotlight reveal">
-              <span class="edu-degree">S1</span>
-              <span class="mono edu-year">2008 — 2012</span>
+            <article class="card reveal">
+              <span class="badge">S1</span>
+              <span class="when">2008–2012</span>
               <h3>Pendidikan Fisika</h3>
               <p>Universitas Ahmad Dahlan, Yogyakarta</p>
             </article>
-            <article class="edu-card card spotlight reveal">
-              <span class="edu-degree">S2</span>
-              <span class="mono edu-year">2013 — 2015</span>
+            <article class="card reveal">
+              <span class="badge">S2</span>
+              <span class="when">2013–2015</span>
               <h3>Pendidikan Fisika</h3>
               <p>Universitas Ahmad Dahlan, Yogyakarta</p>
             </article>
-            <article class="edu-card card spotlight reveal">
-              <span class="edu-degree">S3</span>
-              <span class="mono edu-year">2016 — 2021</span>
+            <article class="card reveal">
+              <span class="badge">S3</span>
+              <span class="when">2016–2021</span>
               <h3>Pendidikan IPA (konsentrasi Fisika)</h3>
               <p>Universitas Pendidikan Indonesia, Bandung</p>
             </article>
@@ -240,153 +110,107 @@
         </div>
       </section>
 
-      <!-- RESEARCH -->
-      <section id="research" class="section">
+      <!-- ORGANISASI -->
+      <section class="section" id="organisasi">
         <div class="container">
-          <div class="section-head">
-            <p class="kicker reveal"><span>03</span> Profil Riset</p>
-            <h2 class="section-title reveal">Spektrum publikasi dan <em>sitasi</em>.</h2>
-            <p class="section-lead reveal">
-              Fokus riset berada pada virtual laboratory, media pembelajaran fisika, video analysis, dan penguatan literasi sains di sekolah maupun perguruan tinggi.
-            </p>
-          </div>
-
-          <div class="research-layout">
-            <div class="chart-card card reveal">
-              <div class="chart-head">
-                <div>
-                  <p class="mono accent">Scholar Analytics</p>
-                  <h3>Publikasi &amp; sitasi per tahun</h3>
-                </div>
-                <div class="legend">
-                  <span><i class="legend-bar"></i>Publikasi</span>
-                  <span><i class="legend-line"></i>Sitasi</span>
-                </div>
-              </div>
-              <div class="chart" id="research-chart" aria-live="polite">
-                <p class="chart-loading mono">Memuat grafik…</p>
-              </div>
-              <div class="metric-row">
-                <div><span class="metric-value" id="metric-citations">435</span><span class="metric-label">Total sitasi</span></div>
-                <div><span class="metric-value" id="metric-hindex">12</span><span class="metric-label">h-index</span></div>
-                <div><span class="metric-value" id="metric-i10">16</span><span class="metric-label">i10-index</span></div>
-              </div>
-            </div>
-
-            <div class="id-grid">
-              <a class="id-card spotlight reveal" target="_blank" rel="noreferrer" href="https://sinta.kemdiktisaintek.go.id/authors/profile/108589#!">
-                <span class="mono">Sinta ID</span><strong>108589</strong><em aria-hidden="true">↗</em>
-              </a>
-              <a class="id-card spotlight reveal" target="_blank" rel="noreferrer" href="https://www.scopus.com/authid/detail.uri?authorId=56766236300">
-                <span class="mono">Scopus ID</span><strong>56766236300</strong><em aria-hidden="true">↗</em>
-              </a>
-              <a class="id-card spotlight reveal" target="_blank" rel="noreferrer" href="https://scholar.google.co.id/citations?user=fHON6FUAAAAJ&hl=id&oi=ao">
-                <span class="mono">Scholar ID</span><strong>fHON6FUAAAAJ</strong><em aria-hidden="true">↗</em>
-              </a>
-              <a class="id-card spotlight reveal" target="_blank" rel="noreferrer" href="https://garuda.kemdiktisaintek.go.id/author/view/600788">
-                <span class="mono">Garuda ID</span><strong>600788</strong><em aria-hidden="true">↗</em>
-              </a>
-              <a class="id-card spotlight reveal" target="_blank" rel="noreferrer" href="https://www.webofscience.com/wos/author/record/U-3895-2017">
-                <span class="mono">WOS Researcher ID</span><strong>U-3895-2017</strong><em aria-hidden="true">↗</em>
-              </a>
-              <a class="id-card spotlight reveal" target="_blank" rel="noreferrer" href="https://orcid.org/0000-0002-1570-0144">
-                <span class="mono">ORCID ID</span><strong>0000-0002-1570-0144</strong><em aria-hidden="true">↗</em>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PUBLICATIONS -->
-      <section id="publication" class="section section-alt">
-        <div class="container">
-          <div class="section-head section-head-row">
-            <div>
-              <p class="kicker reveal"><span>04</span> Publikasi</p>
-              <h2 class="section-title reveal">Riset teknologi, pengembangan media, dan <em>fisika</em>.</h2>
-              <p class="mono muted reveal" id="publication-summary">Memuat metadata Scholar…</p>
-            </div>
-            <label class="search reveal">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8" /><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg>
-              <span class="sr-only">Cari publikasi</span>
-              <input type="search" id="publication-search" placeholder="Cari judul, penulis, atau jurnal…" autocomplete="off" />
-            </label>
-          </div>
-
-          <div class="publication-list" id="publication-list" aria-live="polite">
-            <p class="mono muted">Metadata publikasi sedang dimuat…</p>
-          </div>
-
-          <div class="center">
-            <button class="btn btn-ghost hidden" type="button" id="publication-toggle" aria-expanded="false">Lihat semua publikasi</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- ORGANIZATION -->
-      <section id="organization" class="section">
-        <div class="container">
-          <div class="section-head">
-            <p class="kicker reveal"><span>05</span> Organisasi</p>
-            <h2 class="section-title reveal">Tingkat energi pengalaman <em>kelembagaan</em>.</h2>
-          </div>
-
-          <ol class="energy-levels">
-            <li class="level reveal"><span class="level-n mono">n = 6</span><span class="level-line"><i></i></span><div><span class="mono level-year">2026 — sekarang</span><strong>Founder PT Sangu Ilmu Cendekia</strong></div></li>
-            <li class="level reveal"><span class="level-n mono">n = 5</span><span class="level-line"><i></i></span><div><span class="mono level-year">2022 — sekarang</span><strong>Ketua 1 bagian Kelembagaan OPPSI</strong></div></li>
-            <li class="level reveal"><span class="level-n mono">n = 4</span><span class="level-line"><i></i></span><div><span class="mono level-year">2021 — sekarang</span><strong>Dekan Fakultas Sains dan Teknologi, Universitas Nurul Huda</strong></div></li>
-            <li class="level reveal"><span class="level-n mono">n = 3</span><span class="level-line"><i></i></span><div><span class="mono level-year">2017 — sekarang</span><strong>Ketua Dewan Redaksi Jurnal JIPFRI</strong></div></li>
-            <li class="level reveal"><span class="level-n mono">n = 2</span><span class="level-line"><i></i></span><div><span class="mono level-year">2017 — 2021</span><strong>Ketua Lembaga Penelitian dan Pengabdian Masyarakat Universitas Nurul Huda</strong></div></li>
-            <li class="level reveal"><span class="level-n mono">n = 1</span><span class="level-line"><i></i></span><div><span class="mono level-year">2015 — 2016</span><strong>Ketua Program Studi Pendidikan Fisika STKIP Nurul Huda</strong></div></li>
+          <h2 class="reveal">Jabatan &amp; organisasi</h2>
+          <ol class="timeline">
+            <li class="reveal"><span class="when">2026–sekarang</span><strong>Founder, PT Sangu Ilmu Cendekia</strong></li>
+            <li class="reveal"><span class="when">2022–sekarang</span><strong>Ketua 1 bagian Kelembagaan, OPPSI</strong></li>
+            <li class="reveal"><span class="when">2021–sekarang</span><strong>Dekan Fakultas Sains dan Teknologi, Universitas Nurul Huda</strong></li>
+            <li class="reveal"><span class="when">2017–sekarang</span><strong>Ketua Dewan Redaksi Jurnal JIPFRI</strong></li>
+            <li class="reveal"><span class="when">2017–2021</span><strong>Ketua LPPM Universitas Nurul Huda</strong></li>
+            <li class="reveal"><span class="when">2015–2016</span><strong>Ketua Program Studi Pendidikan Fisika, STKIP Nurul Huda</strong></li>
           </ol>
         </div>
       </section>
 
-      <!-- ACTIVITY -->
-      <section id="activity" class="section section-alt">
+      <!-- RISET -->
+      <section class="section section-tint" id="riset">
         <div class="container">
-          <div class="section-head">
-            <p class="kicker reveal"><span>06</span> Aktivitas Digital</p>
-            <h2 class="section-title reveal">Ruang publikasi, blog, dan <em>konten edukasi</em>.</h2>
-          </div>
+          <h2 class="reveal">Riset</h2>
+          <div class="research">
+            <div class="card chart-card reveal">
+              <div class="chart-head">
+                <h3>Publikasi &amp; sitasi per tahun</h3>
+                <p class="legend"><span><i class="key key-bar"></i>Publikasi</span><span><i class="key key-line"></i>Sitasi</span></p>
+              </div>
+              <div class="chart" id="research-chart"><p class="muted">Memuat grafik…</p></div>
+              <div class="metrics">
+                <div><strong id="metric-citations">435</strong><span>Total sitasi</span></div>
+                <div><strong id="metric-hindex">12</strong><span>h-index</span></div>
+                <div><strong id="metric-i10">16</strong><span>i10-index</span></div>
+              </div>
+              <p class="source">Sumber: Google Scholar</p>
+            </div>
 
-          <div class="activity-grid">
-            <a class="activity-card tilt spotlight reveal" target="_blank" rel="noreferrer" href="https://sanguilmu.com">
-              <span class="activity-logo"><img src="img/sanguilmu.png" alt="Logo Sangu Ilmu" loading="lazy" /></span>
+            <div class="id-grid">
+              <a class="id-card reveal" target="_blank" rel="noreferrer" href="https://sinta.kemdiktisaintek.go.id/authors/profile/108589"><span>Sinta</span><code>108589</code></a>
+              <a class="id-card reveal" target="_blank" rel="noreferrer" href="https://www.scopus.com/authid/detail.uri?authorId=56766236300"><span>Scopus</span><code>56766236300</code></a>
+              <a class="id-card reveal" target="_blank" rel="noreferrer" href="https://scholar.google.co.id/citations?user=fHON6FUAAAAJ&hl=id"><span>Google Scholar</span><code>fHON6FUAAAAJ</code></a>
+              <a class="id-card reveal" target="_blank" rel="noreferrer" href="https://garuda.kemdiktisaintek.go.id/author/view/600788"><span>Garuda</span><code>600788</code></a>
+              <a class="id-card reveal" target="_blank" rel="noreferrer" href="https://www.webofscience.com/wos/author/record/U-3895-2017"><span>Web of Science</span><code>U-3895-2017</code></a>
+              <a class="id-card reveal" target="_blank" rel="noreferrer" href="https://orcid.org/0000-0002-1570-0144"><span>ORCID</span><code>0000-0002-1570-0144</code></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PUBLIKASI -->
+      <section class="section" id="publikasi">
+        <div class="container">
+          <div class="pub-head">
+            <div>
+              <h2 class="reveal">Publikasi</h2>
+              <p class="muted" id="publication-summary">Memuat data…</p>
+            </div>
+            <label class="search">
+              <span class="sr-only">Cari publikasi</span>
+              <input type="search" id="publication-search" placeholder="Cari judul, penulis, atau jurnal" autocomplete="off" />
+            </label>
+          </div>
+          <ol class="publication-list" id="publication-list" aria-live="polite"></ol>
+          <div class="center">
+            <button class="btn btn-outline hidden" type="button" id="publication-toggle" aria-expanded="false">Lihat semua publikasi</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- KARYA -->
+      <section class="section section-tint" id="karya">
+        <div class="container">
+          <h2 class="reveal">Karya &amp; konten edukasi</h2>
+          <div class="work-grid">
+            <a class="card work-card reveal" target="_blank" rel="noreferrer" href="https://sanguilmu.com">
+              <img src="img/sanguilmu.png" alt="" loading="lazy" />
               <strong>Sangu Ilmu</strong>
-              <span class="muted">Platform konten edukasi sains</span>
-              <em class="mono">sanguilmu.com ↗</em>
+              <span>Platform konten edukasi sains</span>
+              <em>sanguilmu.com →</em>
             </a>
-            <a class="activity-card tilt spotlight reveal" target="_blank" rel="noreferrer" href="https://thoha.id">
-              <span class="activity-logo"><img src="img/thohaid.png" alt="Logo Thoha ID" loading="lazy" /></span>
+            <a class="card work-card reveal" target="_blank" rel="noreferrer" href="https://thoha.id">
+              <img src="img/thohaid.png" alt="" loading="lazy" />
               <strong>Thoha.ID</strong>
-              <span class="muted">Blog teknologi pembelajaran</span>
-              <em class="mono">thoha.id ↗</em>
+              <span>Blog teknologi pembelajaran</span>
+              <em>thoha.id →</em>
             </a>
-            <a class="activity-card tilt spotlight reveal" target="_blank" rel="noreferrer" href="https://youtube.com/sanguilmuofficial">
-              <span class="activity-logo"><img src="img/youtube.png" alt="Logo YouTube Sangu Ilmu" loading="lazy" /></span>
+            <a class="card work-card reveal" target="_blank" rel="noreferrer" href="https://youtube.com/sanguilmuofficial">
+              <img src="img/youtube.png" alt="" loading="lazy" />
               <strong>YouTube Sangu Ilmu</strong>
-              <span class="muted">Video pembelajaran &amp; tutorial</span>
-              <em class="mono">youtube.com ↗</em>
+              <span>Video pembelajaran &amp; tutorial</span>
+              <em>youtube.com →</em>
             </a>
           </div>
         </div>
       </section>
 
-      <!-- CONTACT -->
-      <section id="contact" class="section contact">
-        <div class="contact-wave" aria-hidden="true">
-          <svg viewBox="0 0 1200 200" preserveAspectRatio="none">
-            <path class="wave wave-1" d="M0 100 Q 150 20 300 100 T 600 100 T 900 100 T 1200 100" />
-            <path class="wave wave-2" d="M0 100 Q 150 180 300 100 T 600 100 T 900 100 T 1200 100" />
-          </svg>
-        </div>
+      <!-- KONTAK -->
+      <section class="contact" id="kontak">
         <div class="container contact-inner">
-          <p class="kicker reveal"><span>07</span> Kontak</p>
-          <h2 class="contact-title reveal">Mari berkolaborasi dalam <span class="gradient-text">riset &amp; media pembelajaran</span>.</h2>
-          <div class="hero-actions reveal">
-            <a class="btn btn-primary magnetic" href="mailto:mail@thoha.id">mail@thoha.id</a>
-            <a class="btn btn-ghost magnetic" href="https://wa.me/6281278687449" target="_blank" rel="noreferrer">WhatsApp Bisnis</a>
+          <h2 class="reveal">Mari berkolaborasi.</h2>
+          <p class="reveal">Untuk riset bersama, undangan narasumber, atau pengembangan media pembelajaran, hubungi saya lewat email atau WhatsApp.</p>
+          <div class="actions reveal">
+            <a class="btn btn-light" href="mailto:mail@thoha.id">mail@thoha.id</a>
+            <a class="btn btn-ghost-light" href="https://wa.me/6281278687449" target="_blank" rel="noreferrer">WhatsApp +62 812 7868 7449</a>
           </div>
         </div>
       </section>
@@ -394,7 +218,7 @@
 
     <footer class="footer">
       <div class="container footer-inner">
-        <p>© 2026 Thoha Firdaus. Crafted in OKU Timur.</p>
+        <p>© 2026 Thoha Firdaus</p>
         <div class="socials" aria-label="Tautan sosial media">
           <a href="https://sanguilmu.com" target="_blank" rel="noreferrer" aria-label="Website Sangu Ilmu">
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">

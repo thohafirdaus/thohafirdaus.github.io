@@ -9,7 +9,7 @@ Website profil akademik dan profesional Dr. Thoha Firdaus, M.Pd.Si. Situs ini me
 - Daftar seluruh publikasi dari Google Scholar lengkap dengan jumlah sitasi dan fitur pencarian.
 - Publikasi ditampilkan ringkas sebanyak 6 item terbaru, dengan tombol untuk melihat semua publikasi.
 - Informasi pendidikan, pengalaman organisasi, aktivitas digital, dan kontak profesional.
-- Footer berisi tautan sosial media dalam bentuk ikon.
+- Bagian kontak berisi email, WhatsApp, dan tautan sosial media.
 
 ## Teknologi
 

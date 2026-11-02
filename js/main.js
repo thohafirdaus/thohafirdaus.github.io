@@ -1,4 +1,24 @@
 (function () {
+  /* ---------- Muncul halus saat di-scroll ---------- */
+
+  document.documentElement.classList.add("js");
+  const revealObserver = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.15 }
+  );
+  function observeReveal(root) {
+    root.querySelectorAll(".reveal, .trajectory").forEach(function (el) {
+      revealObserver.observe(el);
+    });
+  }
+  observeReveal(document);
+
   const list = document.getElementById("publication-list");
   const toggle = document.getElementById("publication-toggle");
   const summary = document.getElementById("publication-summary");
@@ -46,8 +66,10 @@
               "<div>" +
               '<a class="pub-title" href="' + escapeHTML(p.href) + '" target="_blank" rel="noreferrer">' + highlight(p.title, query) + "</a>" +
               '<p class="pub-meta">' + highlight(p.authors, query) + "</p>" +
-              '<p class="pub-meta">' + (p.source ? highlight(p.source, query) + " · " : "") + "dikutip " + cites + "×</p>" +
-              "</div></li>"
+              (p.source ? '<p class="pub-meta">' + highlight(p.source, query) + "</p>" : "") +
+              "</div>" +
+              '<span class="pub-cite' + (cites ? "" : " is-zero") + '">' + cites + " sitasi</span>" +
+              "</li>"
             );
           })
           .join("")

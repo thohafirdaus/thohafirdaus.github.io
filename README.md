@@ -4,7 +4,7 @@ Website profil akademik dan profesional Dr. Thoha Firdaus, M.Pd.Si. Situs ini me
 
 ## Fitur
 
-- Tampilan terang dan sederhana bergaya halaman akademik: font serif, satu warna aksen, tanpa animasi dekoratif.
+- Tampilan terang bernuansa hijau dengan font serif, kartu, dan animasi halus saat di-scroll.
 - Section riset dengan grafik jumlah publikasi dan sitasi per tahun, serta total sitasi, h-index, dan i10-index yang dihitung otomatis.
 - Daftar seluruh publikasi dari Google Scholar lengkap dengan jumlah sitasi dan fitur pencarian.
 - Publikasi ditampilkan ringkas sebanyak 6 item terbaru, dengan tombol untuk melihat semua publikasi.

@@ -4,7 +4,7 @@ Website profil akademik dan profesional Dr. Thoha Firdaus, M.Pd.Si. Situs ini me
 
 ## Fitur
 
-- Tema "laboratorium kosmik" bernuansa fisika: medan partikel interaktif, orbit atom, dan animasi saat di-scroll.
+- Tampilan terang dan sederhana bergaya halaman akademik: font serif, satu warna aksen, tanpa animasi dekoratif.
 - Section riset dengan grafik jumlah publikasi dan sitasi per tahun, serta total sitasi, h-index, dan i10-index yang dihitung otomatis.
 - Daftar seluruh publikasi dari Google Scholar lengkap dengan jumlah sitasi dan fitur pencarian.
 - Publikasi ditampilkan ringkas sebanyak 6 item terbaru, dengan tombol untuk melihat semua publikasi.
@@ -21,8 +21,8 @@ Website profil akademik dan profesional Dr. Thoha Firdaus, M.Pd.Si. Situs ini me
 ## Struktur Penting
 
 - `index.html` — halaman utama website.
-- `css/style.css` — seluruh stylesheet dan animasi.
-- `js/main.js` — interaksi, efek partikel, grafik, dan daftar publikasi.
+- `css/style.css` — seluruh stylesheet.
+- `js/main.js` — grafik dan daftar publikasi.
 - `data/publications.json` — metadata publikasi yang digunakan untuk daftar publikasi dan grafik riset.
 - `img/` — aset gambar dan logo.
 
